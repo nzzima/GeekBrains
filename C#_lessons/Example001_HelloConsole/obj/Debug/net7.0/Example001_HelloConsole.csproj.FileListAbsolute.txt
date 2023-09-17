@@ -1,0 +1,14 @@
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\bin\Debug\net7.0\Example001_HelloConsole.exe
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\bin\Debug\net7.0\Example001_HelloConsole.deps.json
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\bin\Debug\net7.0\Example001_HelloConsole.runtimeconfig.json
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\bin\Debug\net7.0\Example001_HelloConsole.dll
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\bin\Debug\net7.0\Example001_HelloConsole.pdb
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.AssemblyInfo.cs
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.dll
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\refint\Example001_HelloConsole.dll
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.pdb
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\Example001_HelloConsole.genruntimeconfig.cache
+C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Example001_HelloConsole\obj\Debug\net7.0\ref\Example001_HelloConsole.dll
