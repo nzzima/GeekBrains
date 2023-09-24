@@ -9,9 +9,9 @@ public class Answer {
         if (temp % 2 == 0)
         {
           Console.Write(temp);
-          Console.Write("       ");
+          Console.Write("   ");
         }
-        temp ++;
+        temp++;
       }
     }
 
