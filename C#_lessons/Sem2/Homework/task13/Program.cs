@@ -19,11 +19,7 @@ int GetThird(int number)
     return number % 10;
 }
 
-int number = new Random().Next(1, 100000);
-//int number = 5;
-//int number = 48;
-//int number = 764;
-//int number = 9162;
-Console.WriteLine("Entered number --> " + number);
+Console.Write("Enter number: ");
+int number = Convert.ToInt32(Console.ReadLine());;
 
 if (Validate(number)) Console.WriteLine("Third number --> " + GetThird(number));
