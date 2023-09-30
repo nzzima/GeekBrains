@@ -8,7 +8,6 @@ public class Answer
 {
     private static double Length(int[] pointA, int[] pointB)
     {
-      // Введите свое решение ниже
       double result = Math.Sqrt((pointB[0] - pointA[0])*(pointB[0] - pointA[0]) + 
                                 (pointB[1] - pointA[1])*(pointB[1] - pointA[1]) +
                                 (pointB[2] - pointA[2])*(pointB[2] - pointA[2]));
@@ -16,7 +15,6 @@ public class Answer
 
     }
 
-  // Не удаляйте и не меняйте метод Main! 
     public static void Main(string[] args) {
         int x1, x2, x3, y1, y2, y3;
 
@@ -28,7 +26,6 @@ public class Answer
             y2 = int.Parse(args[4]);
             y3 = int.Parse(args[5]);
         } else {
-           // Здесь вы можете поменять значения для отправки кода на Выполнение
             x1 = 7;
             x2 = -5;
             x3 = 0;
@@ -37,7 +34,6 @@ public class Answer
             y3 = 9;
         }
 
-        // Не удаляйте строки ниже
         double result = Length(new int[]{x1, x2, x3}, new int[]{y1, y2, y3});
         Console.WriteLine($"{result:F2}");
     }
