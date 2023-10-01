@@ -13,13 +13,23 @@ void FillArray(int[] collection)
 
 void PrintArray(int[] collection)
 {
+    Console.Write("[");
     int count = collection.Length;
     int position = 0;
     while (position < count)
     {
-        Console.Write(collection[position] + " | ");
-        position++;
+        if (position == count - 1)
+        {
+            Console.Write(collection[position]);
+            position++;
+        }
+        else
+        {
+            Console.Write(collection[position] + ", ");
+            position++; 
+        }
     }
+    Console.Write("]");
 }
 
 int[] array = new int[8];
