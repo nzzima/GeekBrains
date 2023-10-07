@@ -1,9 +1,6 @@
 ﻿void FillArray(int[] array)
 {
-    for(int index = 0; index < array.Length; index++)
-    {
-        array[index] = new Random().Next(1, 10);
-    }
+    for(int index = 0; index < array.Length; index++) array[index] = new Random().Next(1, 10);
 }
 
 void PrintArray(int[] array)
@@ -11,11 +8,7 @@ void PrintArray(int[] array)
     System.Console.Write("[");
     for(int index = 0; index < array.Length; index++)
     {
-        if (index == array.Length - 1)
-        {
-            System.Console.Write($"{array[index]}");
-
-        }
+        if (index == array.Length - 1) System.Console.Write($"{array[index]}");
         else System.Console.Write($"{array[index]}" + ", ");
     }
     System.Console.Write("]");
