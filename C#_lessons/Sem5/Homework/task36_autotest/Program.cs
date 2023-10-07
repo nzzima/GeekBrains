@@ -4,21 +4,21 @@ public class Answer
 {
     public static int SumOddElements(int[] array)
     {
-      int sum = 0;
-      for(int index = 1; index < array.Length; index++)
-      {
-          if(index % 2 != 0) sum += array[index];
-      }
-      return sum;
+        int sum = 0;
+        for(int index = 1; index < array.Length; index++)
+        {
+            if(index % 2 != 0) sum += array[index];
+        }
+        return sum;
     }
 
     public static void PrintArray(int[] array)
     {
         for(int index = 0; index < array.Length; index++)
-      {
-          System.Console.Write($"{array[index]}" + "\t");
-      }
-      System.Console.WriteLine();
+        {
+            System.Console.Write($"{array[index]}" + "\t");
+        }
+        System.Console.WriteLine();
     }
 
 

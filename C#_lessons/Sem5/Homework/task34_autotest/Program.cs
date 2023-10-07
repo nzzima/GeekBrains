@@ -4,22 +4,22 @@ public class Answer
 {
     public static int CountEvenElements(int[] array)
     { 
-      int count = 0;
-      for(int index = 0; index < array.Length; index++)
-      {
-          if(array[index] % 2 == 0) count++;
-          else continue;
-      }
-    return count;
+        int count = 0;
+        for(int index = 0; index < array.Length; index++)
+        {
+            if(array[index] % 2 == 0) count++;
+            else continue;
+        }
+        return count;
     }
 
     public static void PrintArray(int[] array)
     {
-      for(int index = 0; index < array.Length; index++)
-      {
-          System.Console.Write($"{array[index]}" + "\t");
-      }
-      System.Console.WriteLine();
+        for(int index = 0; index < array.Length; index++)
+        {
+            System.Console.Write($"{array[index]}" + "\t");
+        }
+        System.Console.WriteLine();
     }
 
 
