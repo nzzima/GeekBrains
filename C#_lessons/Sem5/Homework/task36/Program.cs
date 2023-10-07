@@ -11,11 +11,7 @@ void PrintArray(int[] array)
     System.Console.Write("[");
     for(int index = 0; index < array.Length; index++)
     {
-        if (index == array.Length - 1)
-        {
-            System.Console.Write($"{array[index]}");
-
-        }
+        if (index == array.Length - 1) System.Console.Write($"{array[index]}");
         else System.Console.Write($"{array[index]}" + ", ");
     }
     System.Console.Write("]");
