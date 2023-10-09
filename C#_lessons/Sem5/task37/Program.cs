@@ -1,4 +1,7 @@
-﻿void FillArray(int[] array)
+﻿// Задача 37. Найдите произведение пар числе в одномерном массиве. Парой считаем первый и
+// последний элемент, второй и предпоследний и т.д. Результат в новом массиве.
+
+void FillArray(int[] array)
 {
     for(int index = 0; index < array.Length; index++) array[index] = new Random().Next(1, 10);
 }

@@ -1,4 +1,7 @@
-﻿void FillArray(int[] array)
+﻿// Задача 32. Напишите программу замены элементов массива: положительные элементы замените на
+// соответствующие отрицательные, и наоборот.
+
+void FillArray(int[] array)
 {
     for(int index = 0; index < array.Length; index++)
     {

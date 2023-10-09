@@ -1,4 +1,7 @@
-﻿void FillArray(int[] array)
+﻿// Задача 31. Задайте массив из 12 элементов, заполненнный случайными числами из промежутка
+// [-9, 9]. Найдити сумму отриц. и положит. элементов массива.
+
+void FillArray(int[] array)
 {
     for(int index = 0; index < array.Length; index++)
     {

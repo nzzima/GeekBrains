@@ -1,4 +1,7 @@
-﻿void FillArray(int[] array)
+﻿// Задача 33. Задайте массив. Напишите программу, которая определяет, присутствует ли заданное
+// в массиве.
+
+void FillArray(int[] array)
 {
     for(int index = 0; index < array.Length; index++)
     {

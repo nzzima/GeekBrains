@@ -1,4 +1,7 @@
-﻿void FillArray(int[] array)
+﻿// Задача 35. Задайте одномерный массив из 123 случайных чисел. Найдите количество элементов
+// массива, значения которых лежат в отрезке [10, 99].
+
+void FillArray(int[] array)
 {
     for(int index = 0; index < array.Length; index++)
     {
