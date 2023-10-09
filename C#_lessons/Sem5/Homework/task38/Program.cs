@@ -1,4 +1,6 @@
-﻿void FillArray(double[] array)
+﻿// Задача 38. Задайте массив вещественных чисел. Найдите разницу max - min э-тов массива. 
+
+void FillArray(double[] array)
 {
     for(int index = 0; index < array.Length; index++)
     {

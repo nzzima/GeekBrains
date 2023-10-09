@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Задача 38. Задайте массив вещественных чисел. Найдите разницу max - min э-тов массива. 
+
+using System;
 
 public class Answer
 {

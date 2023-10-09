@@ -1,4 +1,7 @@
-﻿void FillArray(int[] array)
+﻿// Задача 36. Задайте одномерный массив, заполненный случайными числами. Найдите сумму эл-тов
+// стоящих на нечетных позициях.
+
+void FillArray(int[] array)
 {
     for(int index = 0; index < array.Length; index++)
     {
