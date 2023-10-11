@@ -19,5 +19,5 @@
     }
 }
 
-string path = @"C:/Users/nzzima/Desktop/GitHub/GeekBrains/C#_lessons/Examples/Example013_RecursiveDirectory";
+string path = @"C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Examples\Example013_RecursiveDirectory";
 CatalogInfo(path);
