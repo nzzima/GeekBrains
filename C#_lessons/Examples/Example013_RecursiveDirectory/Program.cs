@@ -19,5 +19,9 @@
     }
 }
 
+<<<<<<< HEAD
 string path = @"...";
+=======
+string path = @"C:\Users\HYPERPC\PycharmProjects\GB_github\my_geekbrains\C#_lessons\Examples\Example013_RecursiveDirectory";
+>>>>>>> 53c69365034318c8837519a3090feb011ac3b33a
 CatalogInfo(path);
