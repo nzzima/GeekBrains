@@ -26,7 +26,7 @@ void FillArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            matr[i, j] = 2;//new Random().Next(1, 10);
+            matr[i, j] = new Random().Next(1, 10);
         }
     }
 }
@@ -37,7 +37,6 @@ void ReplaceElements_to_quadro(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            if (i == 0 || j == 0) continue;
             if ((i % 2 == 0) && (j % 2 == 0))
             {
                 matr[i, j] *= matr[i, j];
