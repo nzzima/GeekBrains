@@ -2,10 +2,10 @@
 //  строки на столбцы. В случае, если это невозможно, программа должна 
 //  вывести сообщение для пользователя.
 
-Console.WriteLine("Введите размероность массива");
+Console.Write("Введите размероность массива: ");
 int rows = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите размероность массива");
+Console.Write("Введите размероность массива: ");
 int columns = Convert.ToInt32(Console.ReadLine());
 
 if(rows != columns)
@@ -17,7 +17,7 @@ if(rows != columns)
 int [,] array = new int[rows,columns]; 
 int [,] array2 = new int[rows,columns]; 
 
-int[,]  GetArray (int [,] array)
+int[,] GetArray (int [,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
