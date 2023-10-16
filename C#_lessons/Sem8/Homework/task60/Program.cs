@@ -9,18 +9,40 @@ int EnterValue(string message)
     return value;
 }
 
-int[,,] CreateMatrix(int r, int c, int v)
+int GenerateUniqueNumber(int[,,] matrix)
 {
-    int [,,] matrix = new int[r, c, v];
-    int point = 10;
+    while(true)
+    {
+        var n = new Random().Next(10, 100);
+        if (!IsNumInMatrix(matrix, n)) return n;
+    }
+}
+
+bool IsNumInMatrix(int[,,] matrix, int number)
+{
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             for (int k = 0; k < matrix.GetLength(2); k++)
             {
-                matrix[i, j, k] = point;
-                point++;
+                if (matrix[i, j, k] == number) return true;
+            }
+        }
+    }
+    return false;
+}
+
+int[,,] CreateMatrix(int r, int c, int v)
+{
+    int [,,] matrix = new int[r, c, v];
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            for (int k = 0; k < matrix.GetLength(2); k++)
+            {
+                matrix[i, j, k] = GenerateUniqueNumber(matrix);
             }
         }
     }
