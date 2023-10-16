@@ -31,13 +31,18 @@ int[,] MatrixMultiplication(int[,] matrixA, int[,] matrixB)
     return multiplyMatrix;
 }
 
-int rows = EnterValue("Enter count of rows: ");
-int columns = EnterValue("Enter count of columns: ");
+int rowsA = EnterValue("Enter count of rows in matrixA: ");
+int columnsA = EnterValue("Enter count of columns in matrixA: ");
 
-int[,] matrixA = CreateMatrix(rows, columns);
+int rowsB = EnterValue("Enter count of rows in matrixB: ");
+int columnsB = EnterValue("Enter count of columns in matrixB: ");
+
+int[,] matrixA = CreateMatrix(rowsA, columnsA);
 matrixA.PrintMatrix();
 System.Console.WriteLine();
-int[,] matrixB = CreateMatrix(rows, columns);
+
+int[,] matrixB = CreateMatrix(rowsB, columnsB);
 matrixB.PrintMatrix();
 System.Console.WriteLine();
+
 MultiplyIfPossible(matrixA, matrixB);
