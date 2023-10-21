@@ -9,7 +9,7 @@ int N = Convert.ToInt32(Console.ReadLine());
 
 void PrintNumbers(int M, int N)
 {
-    System.Console.WriteLine(M);
+    System.Console.Write(M + " ");
     
     if(M == N) return;
     else PrintNumbers(M+1, N);
