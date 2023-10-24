@@ -32,11 +32,11 @@ namespace Server
 
             while(true)
             {
-                string message = sReader.ReadLine();
+                string? message = sReader.ReadLine();
                 Console.WriteLine($"Client write - {message}");
                 
                 Console.WriteLine("Write answer to client: ");
-                string answer = Console.ReadLine();
+                string? answer = Console.ReadLine();
                 sWriter.WriteLine(answer);
                 sWriter.Flush();
             }
