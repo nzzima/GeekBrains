@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+
 /// <summary>
 /// Класс сортировок массива.
 /// </summary>
@@ -97,6 +99,37 @@ public static class Sorting
                 collection[index++] = i;
 
         return collection;
+    }
+
+    /// <summary>
+    /// Однопоточная сортировка подсчетом
+    /// </summary>
+    /// <param name="InputArray">Исходный массив</param>
+    /// <returns>Отсортированный массив</returns>
+    public static int[] CountingSortExtended(int[] InputArray)
+    {
+        int max = InputArray.Max();
+        int min = InputArray.Min();
+
+        int offset = -min;
+
+        int[] sortedArray = new int[InputArray.Length];
+        int[] counters = new int[max + offset + 1];
+        for (int i = 0; i < InputArray.Length; i++)
+        {
+            counters[InputArray[i] + offset]++;
+        }
+
+        int index = 0;
+        for (int i = 0; i < counters.Length; i++)
+        {
+            for (int j = 0; j < counters[i]; j++)
+            {
+                sortedArray[index] = i - offset;
+                index++;
+            }
+        }
+        return sortedArray;
     }
 
     /// <summary>

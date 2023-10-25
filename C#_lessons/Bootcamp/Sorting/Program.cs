@@ -14,7 +14,7 @@ int[] array = size.CreateArray();
 
 Stopwatch timer = new Stopwatch();
 timer.Start();
-int[] sortedSelectArray = array.SortSelection();
+int[] sortedSelectArray = array.SortSelection(); 
 timer.Stop();
 System.Console.WriteLine($"Sort selection: {timer.ElapsedMilliseconds} ms ");
 
