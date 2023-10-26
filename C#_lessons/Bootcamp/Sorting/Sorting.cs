@@ -80,25 +80,83 @@ public static class Sorting
     /// </summary>
     /// <param name="collection">Исходный массив</param>
     /// <returns>Отсортированный массив</returns>
-    public static int[] SortCounting(this int[] collection)
-    {
-        int size = collection.Length;
+    // public static int[] SortCounting(this int[] collection)
+    // {
+    //     int size = collection.Length;
 
-        int max = collection[0];
-        for(int i = 1; i < size; i++)
-            if(collection[i] > max) max = collection[i];
+    //     int max = collection[0];
+    //     for(int i = 1; i < size; i++)
+    //         if(collection[i] > max) max = collection[i];
         
-        int[] counter = new int[max + 1];
-        for(int i = 0; i < size; i++)
-        counter[collection[i]]++;
+    //     int[] counter = new int[max + 1];
+    //     for(int i = 0; i < size; i++)
+    //     counter[collection[i]]++;
 
-        // System.Console.WriteLine($"counter = [{String.Join(' ', counter)}]");
+    //     // System.Console.WriteLine($"counter = [{String.Join(' ', counter)}]");
+    //     int index = 0;
+    //     for(int i = 0; i < max + 1; i++)
+    //         for(int j = 0; j < counter[i]; j++)
+    //             collection[index++] = i;
+
+    //     return collection;
+    // }
+
+    /// <summary>
+    /// Однопоточная сортировка подсчетом
+    /// </summary>
+    /// <param name="inputArray">Исходный массив</param>
+    public static void CountingSort(int[] inputArray)
+    {
+        int[] counters = new int[10]; //массив повторений
+
+        for (int i = 0; i < inputArray.Length; i++)
+        {
+            counters[inputArray[i]]++;
+            // ourNumber = inputArray[i];
+            // counters[ourNumber]++;
+        }
+
         int index = 0;
-        for(int i = 0; i < max + 1; i++)
-            for(int j = 0; j < counter[i]; j++)
-                collection[index++] = i;
+        for (int i = 0; i < counters.Length; i++)
+        {
+            for (int j = 0; j < counters[i]; j++)
+            {
+                inputArray[index] = i;
+                index++;
+            }
+        }
+    }
 
-        return collection;
+    /// <summary>
+    /// Двупоточная сортировка подсчетом
+    /// </summary>
+    /// <param name="inputArray">Исходный массив</param>
+    /// <returns>Отсортированный массив</returns>
+    public static int[] CountingSortExtended(int[] inputArray)
+    {
+        int max = inputArray.Max();
+        int min = inputArray.Min();
+
+        int offset = -min;
+        int[] sortedArray = new int[inputArray.Length];
+        int[] counters = new int[max + offset + 1];
+
+        for (int i = 0; i < inputArray.Length; i++)
+        {
+            counters[inputArray[i] + offset]++;
+        }
+
+        int index = 0;
+        for (int i = 0; i < counters.Length; i++)
+        {
+            for (int j = 0; j < counters[i]; j++)
+            {
+                sortedArray[index] = i - offset;
+                index++;
+            }
+        }
+
+        return sortedArray;
     }
 
     /// <summary>
